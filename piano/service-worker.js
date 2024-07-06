@@ -2,27 +2,27 @@
 const CACHE_NAME = 'piano-static'; // Cache name without versioning
 
 const POLY_EFFECT_RESOURCES = [
-    '/piano/',
-    '/piano/faust-ui/index.js',
-    '/piano/faust-ui/index.css',
-    '/piano/faustwasm/index.js',
-    '/piano/piano.js',
-    '/piano/piano.wasm',
-    '/piano/piano.json',
-    '/piano/mixerModule.wasm',
-    '/piano/piano_effect.wasm',
-    '/piano/piano_effect.json',
+    './',
+    './faust-ui/index.js',
+    './faust-ui/index.css',
+    './faustwasm/index.js',
+    './piano.js',
+    './piano.wasm',
+    './piano.json',
+    './mixerModule.wasm',
+    './piano_effect.wasm',
+    './piano_effect.json',
 ];
 
 const POLY_RESOURCES = [
-    '/piano/',
-    '/piano/faust-ui/index.js',
-    '/piano/faust-ui/index.css',
-    '/piano/faustwasm/index.js',
-    '/piano/piano.js',
-    '/piano/piano.wasm',
-    '/piano/piano.json',
-    '/piano/mixerModule.wasm',
+    './',
+    './faust-ui/index.js',
+    './faust-ui/index.css',
+    './faustwasm/index.js',
+    './piano.js',
+    './piano.wasm',
+    './piano.json',
+    './mixerModule.wasm',
 ];
 
 /**
@@ -33,7 +33,7 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
-            const urlToCheck = '/piano/piano_effect.json';
+            const urlToCheck = './piano_effect.json';
             return fetchResourceAndCache(cache, urlToCheck);
         })
     );

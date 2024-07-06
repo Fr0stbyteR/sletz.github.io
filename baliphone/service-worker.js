@@ -6,13 +6,13 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
             return cache.addAll([
-                '/baliphone/',
-                '/baliphone/faust-ui/index.js',
-                '/baliphone/faust-ui/index.css',
-                '/baliphone/faustwasm/index.js',
-                '/baliphone/baliphone.js',
-                '/baliphone/baliphone.wasm',
-                '/baliphone/baliphone.json',
+                './',
+                './faust-ui/index.js',
+                './faust-ui/index.css',
+                './faustwasm/index.js',
+                './baliphone.js',
+                './baliphone.wasm',
+                './baliphone.json',
             ]).catch(error => {
                 // Catch and log any errors during the caching process
                 console.error('Failed to cache resources during install:', error);

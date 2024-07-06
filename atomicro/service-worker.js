@@ -6,13 +6,13 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
             return cache.addAll([
-                '/atomicro/',
-                '/atomicro/faust-ui/index.js',
-                '/atomicro/faust-ui/index.css',
-                '/atomicro/faustwasm/index.js',
-                '/atomicro/atomicro.js',
-                '/atomicro/atomicro.wasm',
-                '/atomicro/atomicro.json',
+                './',
+                './faust-ui/index.js',
+                './faust-ui/index.css',
+                './faustwasm/index.js',
+                './atomicro.js',
+                './atomicro.wasm',
+                './atomicro.json',
             ]).catch(error => {
                 // Catch and log any errors during the caching process
                 console.error('Failed to cache resources during install:', error);

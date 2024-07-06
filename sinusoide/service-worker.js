@@ -6,13 +6,13 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
             return cache.addAll([
-                '/sinusoide/',
-                '/sinusoide/faust-ui/index.js',
-                '/sinusoide/faust-ui/index.css',
-                '/sinusoide/faustwasm/index.js',
-                '/sinusoide/sinusoide.js',
-                '/sinusoide/sinusoide.wasm',
-                '/sinusoide/sinusoide.json',
+                './',
+                './faust-ui/index.js',
+                './faust-ui/index.css',
+                './faustwasm/index.js',
+                './sinusoide.js',
+                './sinusoide.wasm',
+                './sinusoide.json',
             ]).catch(error => {
                 // Catch and log any errors during the caching process
                 console.error('Failed to cache resources during install:', error);

@@ -2,27 +2,27 @@
 const CACHE_NAME = 'sampler-static'; // Cache name without versioning
 
 const POLY_EFFECT_RESOURCES = [
-    '/sampler/',
-    '/sampler/faust-ui/index.js',
-    '/sampler/faust-ui/index.css',
-    '/sampler/faustwasm/index.js',
-    '/sampler/sampler.js',
-    '/sampler/sampler.wasm',
-    '/sampler/sampler.json',
-    '/sampler/mixerModule.wasm',
-    '/sampler/sampler_effect.wasm',
-    '/sampler/sampler_effect.json',
+    './',
+    './faust-ui/index.js',
+    './faust-ui/index.css',
+    './faustwasm/index.js',
+    './sampler.js',
+    './sampler.wasm',
+    './sampler.json',
+    './mixerModule.wasm',
+    './sampler_effect.wasm',
+    './sampler_effect.json',
 ];
 
 const POLY_RESOURCES = [
-    '/sampler/',
-    '/sampler/faust-ui/index.js',
-    '/sampler/faust-ui/index.css',
-    '/sampler/faustwasm/index.js',
-    '/sampler/sampler.js',
-    '/sampler/sampler.wasm',
-    '/sampler/sampler.json',
-    '/sampler/mixerModule.wasm',
+    './',
+    './faust-ui/index.js',
+    './faust-ui/index.css',
+    './faustwasm/index.js',
+    './sampler.js',
+    './sampler.wasm',
+    './sampler.json',
+    './mixerModule.wasm',
 ];
 
 /**
@@ -33,7 +33,7 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
-            const urlToCheck = '/sampler/sampler_effect.json';
+            const urlToCheck = './sampler_effect.json';
             return fetchResourceAndCache(cache, urlToCheck);
         })
     );

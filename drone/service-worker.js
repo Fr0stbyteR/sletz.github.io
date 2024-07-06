@@ -6,13 +6,13 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
             return cache.addAll([
-                '/drone/',
-                '/drone/faust-ui/index.js',
-                '/drone/faust-ui/index.css',
-                '/drone/faustwasm/index.js',
-                '/drone/drone.js',
-                '/drone/drone.wasm',
-                '/drone/drone.json',
+                './',
+                './faust-ui/index.js',
+                './faust-ui/index.css',
+                './faustwasm/index.js',
+                './drone.js',
+                './drone.wasm',
+                './drone.json',
             ]).catch(error => {
                 // Catch and log any errors during the caching process
                 console.error('Failed to cache resources during install:', error);

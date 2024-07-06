@@ -6,13 +6,13 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
             return cache.addAll([
-                '/osc2/',
-                '/osc2/faust-ui/index.js',
-                '/osc2/faust-ui/index.css',
-                '/osc2/faustwasm/index.js',
-                '/osc2/osc2.js',
-                '/osc2/osc2.wasm',
-                '/osc2/osc2.json',
+                './',
+                './faust-ui/index.js',
+                './faust-ui/index.css',
+                './faustwasm/index.js',
+                './osc2.js',
+                './osc2.wasm',
+                './osc2.json',
             ]).catch(error => {
                 // Catch and log any errors during the caching process
                 console.error('Failed to cache resources during install:', error);

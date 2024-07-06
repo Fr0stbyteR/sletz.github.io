@@ -6,13 +6,13 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
             return cache.addAll([
-                '/attackey/',
-                '/attackey/faust-ui/index.js',
-                '/attackey/faust-ui/index.css',
-                '/attackey/faustwasm/index.js',
-                '/attackey/attackey.js',
-                '/attackey/attackey.wasm',
-                '/attackey/attackey.json',
+                './',
+                './faust-ui/index.js',
+                './faust-ui/index.css',
+                './faustwasm/index.js',
+                './attackey.js',
+                './attackey.wasm',
+                './attackey.json',
             ]).catch(error => {
                 // Catch and log any errors during the caching process
                 console.error('Failed to cache resources during install:', error);

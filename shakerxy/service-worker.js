@@ -6,13 +6,13 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
             return cache.addAll([
-                '/shakerxy/',
-                '/shakerxy/faust-ui/index.js',
-                '/shakerxy/faust-ui/index.css',
-                '/shakerxy/faustwasm/index.js',
-                '/shakerxy/shakerxy.js',
-                '/shakerxy/shakerxy.wasm',
-                '/shakerxy/shakerxy.json',
+                './',
+                './faust-ui/index.js',
+                './faust-ui/index.css',
+                './faustwasm/index.js',
+                './shakerxy.js',
+                './shakerxy.wasm',
+                './shakerxy.json',
             ]).catch(error => {
                 // Catch and log any errors during the caching process
                 console.error('Failed to cache resources during install:', error);

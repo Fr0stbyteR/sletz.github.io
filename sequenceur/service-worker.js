@@ -6,13 +6,13 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME).then(cache => {
             console.log("Service worker installed");
             return cache.addAll([
-                '/sequenceur/',
-                '/sequenceur/faust-ui/index.js',
-                '/sequenceur/faust-ui/index.css',
-                '/sequenceur/faustwasm/index.js',
-                '/sequenceur/sequenceur.js',
-                '/sequenceur/sequenceur.wasm',
-                '/sequenceur/sequenceur.json',
+                './',
+                './faust-ui/index.js',
+                './faust-ui/index.css',
+                './faustwasm/index.js',
+                './sequenceur.js',
+                './sequenceur.wasm',
+                './sequenceur.json',
             ]).catch(error => {
                 // Catch and log any errors during the caching process
                 console.error('Failed to cache resources during install:', error);
