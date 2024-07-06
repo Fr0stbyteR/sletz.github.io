@@ -1,12 +1,11 @@
 {
   "name": "Faust baliphone",
   "short_name": "baliphone",
-  "start_url": "/baliphone/index.html",
+  "start_url": "./index.html",
   "description": "Progressive Web App for baliphone",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "scope": "/baliphone/",
   "orientation": "portrait",
   "icons": [
     {

@@ -1,12 +1,11 @@
 {
   "name": "Faust osc2",
   "short_name": "osc2",
-  "start_url": "/osc2/index.html",
+  "start_url": "./index.html",
   "description": "Progressive Web App for osc2",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "scope": "/osc2/",
   "orientation": "portrait",
   "icons": [
     {

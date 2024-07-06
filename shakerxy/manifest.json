@@ -1,12 +1,11 @@
 {
   "name": "Faust shakerxy",
   "short_name": "shakerxy",
-  "start_url": "/shakerxy/index.html",
+  "start_url": "./index.html",
   "description": "Progressive Web App for shakerxy",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "scope": "/shakerxy/",
   "orientation": "portrait",
   "icons": [
     {

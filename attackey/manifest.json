@@ -1,12 +1,11 @@
 {
   "name": "Faust attackey",
   "short_name": "attackey",
-  "start_url": "/attackey/index.html",
+  "start_url": "./index.html",
   "description": "Progressive Web App for attackey",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "scope": "/attackey/",
   "orientation": "portrait",
   "icons": [
     {

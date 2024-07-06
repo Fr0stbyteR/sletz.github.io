@@ -1,12 +1,11 @@
 {
   "name": "Faust sequenceur",
   "short_name": "sequenceur",
-  "start_url": "/sequenceur/index.html",
+  "start_url": "./index.html",
   "description": "Progressive Web App for sequenceur",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "scope": "/sequenceur/",
   "orientation": "portrait",
   "icons": [
     {

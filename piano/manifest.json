@@ -1,12 +1,11 @@
 {
   "name": "Faust piano",
   "short_name": "piano",
-  "start_url": "/piano/index.html",
+  "start_url": "./index.html",
   "description": "Progressive Web App for piano",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "scope": "/piano/",
   "orientation": "portrait",
   "icons": [
     {

@@ -1,12 +1,11 @@
 {
   "name": "Faust drone",
   "short_name": "drone",
-  "start_url": "/drone/index.html",
+  "start_url": "./index.html",
   "description": "Progressive Web App for drone",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "scope": "/drone/",
   "orientation": "portrait",
   "icons": [
     {
